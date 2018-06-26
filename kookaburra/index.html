@@ -5,8 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Kookaburra</title>
+  <style>
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item__title {
+      font-size: 36px;
+      color: #212121;
+    }
+  </style>
 </head>
 <body>
-
+  <section class="item">
+    <h1 class="item__title">Kookaburra</h1>
+    <picture class="item__pic">
+      <source media="(min-width: 960px)" srcset="kookaburra_large_1x.jpg 1x, kitten_large_2x.jpg 2x">
+      <source media="(min-width: 640px)" srcset="kookaburra_medium_1x.jpg 1x, kitten_medium_2x.jpg 2x">
+      <img src="kookaburra_small.jpg" alt="Kookaburra">
+    </picture>
+  </section>
 </body>
 </html>
